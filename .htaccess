@@ -1,9 +1,7 @@
- RewriteCond $1 !^(index\.php|resources|robots\.txt)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteBase /
+
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L,QSA]
-
-Options -Indexes
-
-<Files .htaccess>order allow,denydeny from all
-</Files>
+RewriteRule ^ index.php [QSA,L]
+</IfModule>
