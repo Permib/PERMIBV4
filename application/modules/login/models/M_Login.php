@@ -24,7 +24,7 @@ class M_Login extends CI_Model {
                       ->get('tbl_users');
 
     if($query->num_rows() > 0){
-      return $query->row();
+      return;urn $query->row();
     }else{
       return false;
     }
