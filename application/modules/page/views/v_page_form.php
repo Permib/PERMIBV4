@@ -49,6 +49,7 @@
   </div>
 
   <div class="col-md-12">
+    <input type="hidden" name="tanggal" class="form-control" value="<?= date('Y-m-d H-m-s');?>">
 
     <div class="form-group">
       <label>Upload gambar</label>
@@ -56,7 +57,7 @@
     </div>
 
     <div class="form-group">
-      <label>Keterangan</label>
+      <label>Isi</label>
       <textarea name="isi" class="form-control" placeholder="Keterangan" id="keterangan"><?php  if(isset($page->judul_post)){echo $page->isi_post;}?></textarea>
     </div>
 

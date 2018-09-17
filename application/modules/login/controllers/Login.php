@@ -18,7 +18,7 @@ class Login extends CI_Controller {
         $username = set_value('_username');
         $data = $this->M_Login->get_akun($username);
         $this->session->set_userdata($data);
-        redirect('');
+        redirect('dashboard');
 
       }else{
         $this->session->set_flashdata('status_login','gagal');

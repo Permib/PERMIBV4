@@ -9,13 +9,19 @@ class Page extends CI_Controller {
 
 	public function index()
 	{
+    $data = array('page' => $this->M_Page->get_all_page());
+    $this->load->view('v_page_index.php', $data);
+  }
 
+  public function detail_page($id){
+    $data = array('page' => $this->M_Page->get_page($id));
+    $this->load->view('v_page_detail.php', $data);
   }
 
   private function form($action = 'insert', $id =''){
     $data = array('action' => base_url('page/'.$action.'/'.$id),
                   'page' => $this->M_Page->get_page($id));
-    $this->load->view('v_page', $data);
+    $this->load->view('v_page_form', $data);
   }
 
   public function add(){
@@ -36,7 +42,7 @@ class Page extends CI_Controller {
       'tanggal_post' => $this->input->post('tanggal'));
 
       $this->M_Page->insert($data);
-      redirect('');
+      redirect('page');
   }
 
   public function update($id){
@@ -48,7 +54,7 @@ class Page extends CI_Controller {
       'tanggal_post' => $this->input->post('tanggal'));
 
       $this->M_Page->update($id, $data);
-      redirect('');
+      redirect('page');
   }
 
   public function delete($id){
