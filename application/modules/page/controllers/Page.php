@@ -13,48 +13,104 @@ class Page extends CI_Controller {
     $this->load->view('v_page_index.php', $data);
   }
 
-  public function detail_page($id){
-    $data = array('page' => $this->M_Page->get_page($id));
-    $this->load->view('v_page_detail.php', $data);
+  public function detail_page(){
+    if($this->uri->segment(2)){
+      $slug_post = $this->uri->segment(2);
+      $css = array();
+      $data = array('title' => 'Event - Perhimpunan Mahasiswa Bandung Telkom university',
+                    'page' => $this->M_Page->get_page($slug_post),
+                    'css' => $css);
+      $this->load->view('template/v_header', $data);
+      $this->load->view('v_page_detail.php');
+      $this->load->view('template/v_footer');
+    }
   }
 
-  private function form($action = 'insert', $id =''){
-    $data = array('action' => base_url('page/'.$action.'/'.$id),
-                  'page' => $this->M_Page->get_page($id));
+  private function form($action = 'insert', $slug_post =''){
+    $data = array('action' => base_url('page/'.$action.'/'.$slug_post),
+                  'page' => $this->M_Page->get_page($slug_post));
     $this->load->view('v_page_form', $data);
   }
 
-  public function add(){
+  public function add()
+  {
     $this->form();
   }
 
-  public function edit($id){
-    $this->form('update', $id);
+  public function edit($slug_post)
+  {
+    $this->form('update', $slug_post);
   }
 
 
   public function insert(){
-    $data = array(
-      'users' => $this->session->userdata('username'),
-      'judul_post' => $this->input->post('judul'),
-      'isi_post' => $this->input->post('isi'),
-      'image' => $this->input->post('image'),
-      'tanggal_post' => $this->input->post('tanggal'));
+    $slug = url_title($this->input->post('judul'), 'dash', true);
+    if(!$this->M_Page->check_slug($slug)){
+        $path_year = date('Y');
+        $path_month = date('m');
+        $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
+        if (!is_dir($path_img))
+        {
+          mkdir($path_img, 0777, TRUE);
+        }
 
-      $this->M_Page->insert($data);
+        $config['upload_path']          = $path_img;
+        $config['allowed_types']        = 'jpeg|jpg|png';
+        $config['max_size']             = 1024000;
+        $config['max_width']            = 1920;
+        $config['max_height']           = 1280;
+        $config['file_name']            = $slug;
+
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('image'))
+  			{
+            redirect('page');
+  			}else{
+  				 $this->session->set_flashdata('upload_status', 'sukses');
+  				 $gambar = $this->upload->data();
+  				 $source = './assets/image/post/'.$path_year.'/'.$path_month.'/'.$gambar['file_name'];
+
+           $data = array(
+              'users' => $this->session->userdata('username'),
+              'judul_post' => $this->input->post('judul'),
+              'isi_post' => $this->input->post('isi'),
+              'image' => $source,
+              'tanggal_event' => $this->input->post('tanggal_event'),
+              'tanggal_post' => $this->input->post('tanggal'),
+              'slug_post' => $slug
+           );
+
+            $this->M_Page->insert($data);
+            $this->session->set_flashdata('insert_page','success');
+            redirect('page');
+          }
+
+    }else{
+      $this->session->set_flashdata('insert_page','failed');
       redirect('page');
+    }
+
   }
 
-  public function update($id){
-    $data = array(
-      'users' => $this->session->userdata('username'),
-      'judul_post' => $this->input->post('judul'),
-      'isi_post' => $this->input->post('isi'),
-      'image' => $this->input->post('image'),
-      'tanggal_post' => $this->input->post('tanggal'));
+  public function update($slug_post){
+    $new_slug = url_title($this->input->post('judul'), 'dash', true);
+    if($new_slug != $slug_post){
+      $data = array(
+        'users' => $this->session->userdata('username'),
+        'judul_post' => $this->input->post('judul'),
+        'isi_post' => $this->input->post('isi'),
+        'image' => $this->input->post('image'),
+        'tanggal_event' => $this->input->post('tanggal_event'),
+        'tanggal_post' => $this->input->post('tanggal'),
+        'slug_post' => $new_slug);
 
-      $this->M_Page->update($id, $data);
+        $this->M_Page->update($slug_post, $data);
+        redirect('page');
+    }else{
       redirect('page');
+
+    }
   }
 
   public function delete($id){

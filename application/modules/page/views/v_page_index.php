@@ -22,7 +22,7 @@
         <td><?=$row->image?></td>
         <td><?=$row->tanggal_post?></td>
         <td><?=$row->tanggal?></td>
-        <td><a href="http://localhost/projectpermib/page/detail_page/<?=$row->id_post?>">Detail</a>  <a href="http://localhost/projectpermib/page/edit/<?=$row->id_post?>">Edit</a> <a href="http://localhost/projectpermib/page/detail_page/<?=$row->id_post?>">Delete</a> </td>
+        <td><a href="http://localhost/projectpermib/page/detail_page/<?=$row->slug_post?>">Detail</a>  <a href="http://localhost/projectpermib/page/edit/<?=$row->slug_post?>">Edit</a> <a href="http://localhost/projectpermib/page/detail_page/<?=$row->slug_post?>">Delete</a> </td>
 
       </tr>
     <?php } ?>

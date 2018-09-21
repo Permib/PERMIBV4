@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> WPV3_AboutPermib </title>
+		<meta charset="utf-8">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
+
+		<!-- Bootstrap Collapse -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Pure CSS -->
+		<link rel="stylesheet" type="text/css" href="css/about_permib.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" crossorigin="anonymous"></script>
+		
+
+		<!-- font -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- JQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<header>
+
+        <nav>
+
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+
+          <div class="logo">
+            LOGO
+          </div>
+
+          <div class="menu">
+             <ul>
+                <!-- Home with dropdown -->
+                <li> <a href="#"> HOME  </a> </li>
+                <li><a href="#"> EVENT </a></li>
+                <li><a href="#"> DOCUMENTATION </a></li>
+                <li><a href="#"> ABOUT </a></li>
+             	</ul>
+          </div>
+       </nav>
+
+    </header>
+
+    <!-- Content Goes Here  -->
+    <section class="bg-info" style="margin-top: -25px;">
+        <div class="container" >
+          <div class="pengertian-permib">
+            <h1 style="padding-top: 20px;"> Apa itu PERMIB?</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <p style="text-align: justify;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            </div>
+
+            <div class="col-md-4 p-logo-permib">
+              <!-- buat logo permib -->
+              <img src="D:/Proyek/Permib/WebPermibV3/image/PermibTU.png" style="height: 200px; width: 200px; margin">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 10px;"></div>
+
+    <section class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- foto sejarah -->
+            <img src="D:/Proyek/Permib/WebPermibV3/image/pexels-photo-674577.jpeg">
+          </div>
+
+          <div class="col-sm-6 bg-primary" >
+            <!-- text Sejarah -->
+            <div class="sejarah">
+              <h2> Sejarah </h2>
+
+              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="hade-pisan">
+         <h2> " Bandung? <br> HADE PISAN EUY " </h2> 
+        </div>
+
+            
+    </section>
+
+    <!-- Section Visi dan Misi -->
+    <section class="secVisiMisi" style="margin-top: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <h1 class="visiPermib"> VISI </h1>
+          </div>
+
+          <div class="col-sm-7">
+            <p class="isiVisi"> " Membangung PERMIB untuk menjadi Himpunan Kedaerahan yang Inspiratif
+                aktif, inovatif, kreatif <br> dengan menjunjung tinggi budaya musyawarah <br>
+                  hingga mencapai mufakat"</p>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="row">
+            <div class="col-sm-7">
+              <p class="isiMisi"> 1. Menjadikan PERMIB sebagai wadah inspirasi semua elemen yang berada di sekitarnya <br>
+                2. Turut serta dalam mengimplementasikan Tri Darma Perguruan Tinggi tingkat himpunan kedaerahan <br>
+                3. Menyelenggarakan dan Mengembangkan kegiatan sesuai dengan kebutuhan warga PERMIB. <br>
+              4. Menciptakan wadah untuk menampung, mempertimbangkan, dan mewujudkan </p>
+            </div>
+
+            <div class="col-sm-5">
+              <h1 class="misiPermib"> MISI </h1>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Organigram -->
+
+    <section>
+      <img src="D:/Proyek/Permib/WebPermibV3/image/organigram.jpg" class="img-fluid">
+    </section>
+
+
+    <!-- Batas Content -->
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+          <h3> Permib Bandung </h3>
+
+          <p class="footer-links"> 
+            <a href="#"> HOME </a>
+            -
+            <a href="#"> BLOG </a>
+            -
+            <a href="#"> ABOUT </a>
+            -
+            <a href="#"> CONTACT </a>
+          </p>
+
+          <p class="footer-tim-web"> Tim Website Permib &copy; 2018</p>
+
+        </div>
+
+        <div class="footer-center">
+          
+              <div class="alamat-permib">
+                  <i class="fa fa-map-marker"></i>
+                  <p><span> Jl. Telekomunikasi No.1 Terusan Buah Batu </span>
+                    Bandung Jawa Barat, Indonesia. 40257
+                  </p>
+              </div>
+
+              <!-- <div> -->
+                  <!-- <i class="fa fa-line"></i> -->
+                  <!-- <p> @MWQ2678N</p> -->
+              <!-- </div> -->
+
+              <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="PermibMail">
+                    permib.bandung@gmail.com
+                  </a></p>
+              </div>
+
+        </div>
+
+        <div class="footer-right">
+
+              <p class="VisitPermib">
+                Visit US On
+              </p>
+
+              <div class="footer-icons">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+          
+        </div>
+        
+     </footer>
+
+
+    <!-- batas wrapper -->
+		</div>
+
+
+		<!-- JS SLider -->
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+	  <script  src="js/Slider.js"></script>
+
+	  <!-- EVENT -->
+	  
+	  
+		<!-- JS Navbar -->
+		<script src="js/Navbar.js"></script>
+	  <script src="js/dropdown"></script>
+		
+		<!-- Bootstrap CDN Package -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+	</body>
+</html>

@@ -3,23 +3,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->model('Page/M_Page');
+		$css = array('style.css');
+		$data = array('title' => 'PERMIB - Perhimpunan Mahasiswa Bandung Telkom university',
+									'css' => $css,
+									'event' => $this->M_Page->get_event_by_total(3)
+								);
+
+		$this->load->view('template/v_header', $data);
+		$this->load->view('v_homepage');
+		$this->load->view('template/v_footer');
+	}
+
+	public function about()
+	{
+		$css = array('about_permib.css');
+		$data = array('title' => 'About PERMIB - Perhimpunan Mahasiswa Bandung Telkom university',
+									'css' => $css);
+
+		$this->load->view('template/v_header', $data);
+		$this->load->view('v_about');
+		$this->load->view('template/v_footer');
+	}
+
+	public function documentation()
+	{
+		$css = array('docum.css');
+		$data = array('title' => 'Documentation - Perhimpunan Mahasiswa Bandung Telkom university',
+									'css' => $css);
+
+		$this->load->view('template/v_header', $data);
+		$this->load->view('v_documentation');
+		$this->load->view('template/v_footer');
 	}
 }
