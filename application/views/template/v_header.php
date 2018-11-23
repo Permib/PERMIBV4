@@ -10,11 +10,14 @@
 		<!-- Bootstrap Collapse -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<!-- Jquery Datatable CSS -->
+		<link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
     <!-- Pure CSS -->
     <?php foreach ($css as $row_css) {
       echo '<link rel="stylesheet" type="text/css" href="'.base_url().'/assets/css/'.$row_css.'">';
-
     } ?>
+
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -62,3 +65,4 @@
                 </nav>
 
               </header>
+			</div>

@@ -3,7 +3,7 @@
             	<div class="row">
             			<!-- PMB -->
             			<div class="col-sm-4 col-12">
-            				<div class="card" style="width: 18rem;">
+            				<div class="card card-proker" style="width: 18rem;">
 									  <img class="card-img-top" src="https://dummyimage.com/180x100/000000/fff" alt="Card image cap">
 									  <div class="card-body">
 									    <h5 class="card-title">PERMIBTIVITY</h5>
@@ -15,7 +15,7 @@
 
             			<!-- PERMIB -->
             			<div class="col-sm-4 col-12">
-            				<div class="card" style="width: 18rem;">
+            				<div class="card card-proker" style="width: 18rem;">
 									  <img class="card-img-top" src="https://dummyimage.com/180x100/000000/fff" alt="Card image cap">
 									  <div class="card-body">
 									    <h5 class="card-title">PERMIB</h5>
@@ -27,7 +27,7 @@
 
             			<!-- PERFECT -->
             			<div class="col-sm-4 col-12">
-            				<div class="card" style="width: 18rem;">
+            				<div class="card card-proker" style="width: 18rem;">
 									  <img class="card-img-top" src="https://dummyimage.com/180x100/000000/fff" alt="Card image cap">
 									  <div class="card-body">
 									    <h5 class="card-title">PERFECT</h5>

@@ -6,8 +6,42 @@
             		<div class="head-docum">
             			<h1> Permib Photo Gallery </h1>
             		</div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-	            	<div class="foto-galeri">
+	            	<!-- <div class="foto-galeri">
 
 	            		<ul class="box">
 	            			<li>
@@ -32,13 +66,47 @@
 
 	            		</ul>
 
-	            	</div>
+	            	</div> -->
 
 	            	<div class="head-docum">
             			<h1> Perfect Photo Gallery </h1>
             		</div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            		<div class="foto-galeri">
+            		<!-- <div class="foto-galeri">
             			<ul class="box">
             				<li>
             					<img src="https://farm4.static.flickr.com/3022/2315482595_124fbdc487_m.jpg ">
@@ -60,13 +128,47 @@
             					<img src="https://farm4.static.flickr.com/3022/2315482595_124fbdc487_m.jpg ">
             				</li>
             			</ul>
-            		</div>
+            		</div> -->
 
             		<div class="head-docum">
             			<h1> PMB Photo Gallery </h1>
             		</div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-12 card-documentation">
+                      <div class="card-image">
+                        <img class="img-fluid" src="https://farm3.static.flickr.com/2023/2313208499_94cf139fed_m.jpg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            		<div class="foto-galeri">
+            		<!-- <div class="foto-galeri">
             			<ul class="box">
             				<li>
             					<img src="https://farm4.static.flickr.com/3022/2315482595_124fbdc487_m.jpg ">
@@ -88,7 +190,7 @@
             					<img src="https://farm4.static.flickr.com/3022/2315482595_124fbdc487_m.jpg ">
             				</li>
             			</ul>
-            		</div>
+            		</div> -->
 
 
 

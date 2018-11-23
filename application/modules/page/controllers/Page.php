@@ -9,8 +9,14 @@ class Page extends CI_Controller {
 
 	public function index()
 	{
-    $data = array('page' => $this->M_Page->get_all_page());
-    $this->load->view('v_page_index.php', $data);
+    $css = [];
+    $data = array('title' => 'Kelola Posting',
+                  'css' => $css,
+                  'page' => $this->M_Page->get_all_page());
+    $this->load->view('template/v_header', $data);
+    $this->load->view('v_page_index.php');
+    $this->load->view('template/v_footer');
+
   }
 
   public function detail_page(){

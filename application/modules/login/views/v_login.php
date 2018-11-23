@@ -1,70 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title></title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the abostyve in your HEAD tag ---------->
-    <style media="screen">
-      body {
-      margin: 0;
-      padding: 0;
-      background-color: #17a2b8;
-      height: 100vh;
-      }
-      #login .container #login-row #login-column #login-box {
-      margin-top: 120px;
-      max-width: 600px;
-      height: 320px;
-      border: 1px solid #9C9C9C;
-      background-color: #EAEAEA;
-      }
-      #login .container #login-row #login-column #login-box #login-form {
-      padding: 20px;
-      }
-      #login .container #login-row #login-column #login-box #login-form #register-link {
-      margin-top: -85px;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="<?=base_url('assets/css/signin.css')?>" rel="stylesheet">
   </head>
-    <body>
-        <div id="login">
-            <h3 class="text-center text-white pt-5">Login form</h3>
-            <?php if ($this->session->flashdata('status_login') == 'gagal') { ?>
-             <div class="alert alert-success alert-dismissible" role="alert">
-               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               <span>Username atau Password salah!!</span>
-             </div>
-           <?php } ?>
-            <div class="container">
-                <div id="login-row" class="row justify-content-center align-items-center">
-                    <div id="login-column" class="col-md-6">
-                        <div id="login-box" class="col-md-12">
-                              <?php echo form_open('','form'); ?>
-                                <h3 class="text-center text-info">Login</h3>
-                                <div class="form-group">
-                                    <label for="username" class="text-info">Username:</label><br>
-                                    <input type="text" name="_username" id="username" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="text-info">Password:</label><br>
-                                    <input type="text" name="_password" id="password" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                    <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
-                                </div>
-                                <div id="register-link" class="text-right">
-                                    <a href="#" class="text-info">Register here</a>
-                                </div>
-                            <?php echo form_close(); ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-  </body>
-</html>
+
+  <body class="text-center">
+      <?=form_open('', ['class'=>'form-signin']);?>
+      <img class="mb-4" src="login.php_files/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="text" name="_username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
+
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" name="_password" id="inputPassword" class="form-control" placeholder="Password" required="">
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+    <?=form_close('');?>
+
+
+</body></html>
