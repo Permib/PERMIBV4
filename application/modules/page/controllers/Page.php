@@ -13,9 +13,9 @@ class Page extends CI_Controller {
     $data = array('title' => 'Kelola Posting',
                   'css' => $css,
                   'page' => $this->M_Page->get_all_page());
-    $this->load->view('template/v_header', $data);
+    $this->load->view('template/v_admin_header', $data);
     $this->load->view('v_page_index.php');
-    $this->load->view('template/v_footer');
+    $this->load->view('template/v_admin_footer');
 
   }
 
@@ -26,16 +26,22 @@ class Page extends CI_Controller {
       $data = array('title' => 'Event - Perhimpunan Mahasiswa Bandung Telkom university',
                     'page' => $this->M_Page->get_page($slug_post),
                     'css' => $css);
-      $this->load->view('template/v_header', $data);
+      $this->load->view('template/v_admin_header', $data);
       $this->load->view('v_page_detail.php');
-      $this->load->view('template/v_footer');
+      $this->load->view('template/v_admin_footer');
     }
   }
 
   private function form($action = 'insert', $slug_post =''){
-    $data = array('action' => base_url('page/'.$action.'/'.$slug_post),
+    $css = [];
+    $data = array('css' => $css,
+                  'action' => base_url('page/'.$action.'/'.$slug_post),
+                  'title' => $action,
                   'page' => $this->M_Page->get_page($slug_post));
-    $this->load->view('v_page_form', $data);
+    $this->load->view('template/v_admin_header', $data);
+    $this->load->view('v_page_form');
+    $this->load->view('template/v_admin_footer');
+
   }
 
   public function add()
@@ -121,6 +127,7 @@ class Page extends CI_Controller {
 
   public function delete($id){
     $this->M_Page->delete($id);
+    redirect('page');
   }
 
 }

@@ -9,7 +9,13 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
+    $css = [];
+    $data = ['title' => 'Dashboard',
+              'css' => $css];
+
+    $this->load->view('template/v_admin_header', $data);
     $this->load->view('v_admin_index.php');
+    $this->load->view('template/v_admin_footer');
   }
 
 }
