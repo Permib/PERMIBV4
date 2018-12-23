@@ -19,7 +19,7 @@ class M_Login extends CI_Model {
   }
 
   public function get_akun($username){
-    $query = $this->db->select('username', 'nama', 'level', 'jabatan', 'image')
+    $query = $this->db->select('username, nama, level, jabatan, image')
                       ->where('username', $username)
                       ->get('tbl_users');
 

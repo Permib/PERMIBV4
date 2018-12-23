@@ -52,8 +52,10 @@
 	</head>
   <body>
     <div class="topnav">
-     <a class="active" href="#home">Home</a>
-     <a href="#news">Manage Post</a>
-     <a href="#contact">Contact</a>
-     <a href="#about">About</a>
+     <a class="active" href="<?=base_url('dashboard')?>">Home</a>
+     <a href="<?=base_url('page')?>">Manage Post</a>
+     <a href="<?=base_url('logout')?>">Logout</a>
+     <a href="#about">Hi.. <?=$this->session->userdata('username');?></a>
+	 <?php echo var_dump($this->session->userdata('nama')); ?>
+	
     </div>

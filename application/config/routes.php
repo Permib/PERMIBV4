@@ -57,3 +57,4 @@ $route['dashboard'] = 'admin/admin';
 $route['about'] = 'home/about';
 $route['documentation'] = 'home/documentation';
 $route['event/(:any)'] = 'page/detail_page';
+$route['logout'] = 'login/logout';

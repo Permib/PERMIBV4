@@ -9,10 +9,10 @@ class Page extends CI_Controller {
 
 	public function index()
 	{
-    $css = [];
-    $data = array('title' => 'Kelola Posting',
+    $css = []; // Cssnya gak ada berarti kalo kosong
+    $data = ['title' => 'Kelola Posting',
                   'css' => $css,
-                  'page' => $this->M_Page->get_all_page());
+                  'page' => $this->M_Page->get_all_page()];
     $this->load->view('template/v_admin_header', $data);
     $this->load->view('v_page_index.php');
     $this->load->view('template/v_admin_footer');
@@ -44,7 +44,7 @@ class Page extends CI_Controller {
 
   }
 
-  public function add()
+  public function create()
   {
     $this->form();
   }
@@ -58,7 +58,7 @@ class Page extends CI_Controller {
   public function insert(){
     $slug = url_title($this->input->post('judul'), 'dash', true);
     if(!$this->M_Page->check_slug($slug)){
-        $path_year = date('Y');
+		$path_year = date('Y');
         $path_month = date('m');
         $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
         if (!is_dir($path_img))
@@ -74,9 +74,8 @@ class Page extends CI_Controller {
         $config['file_name']            = $slug;
 
         $this->load->library('upload', $config);
-
-        if (!$this->upload->do_upload('image'))
-  			{
+        if(!$this->upload->do_upload('image'))
+			{
             redirect('page');
   			}else{
   				 $this->session->set_flashdata('upload_status', 'sukses');
@@ -97,22 +96,56 @@ class Page extends CI_Controller {
             $this->session->set_flashdata('insert_page','success');
             redirect('page');
           }
-
     }else{
       $this->session->set_flashdata('insert_page','failed');
       redirect('page');
     }
+  }
+  
+  private function uploadImage(){
+		$path_year = date('Y');
+        $path_month = date('m');
+        $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
+        if (!is_dir($path_img))
+        {
+          mkdir($path_img, 0777, TRUE);
+        }
 
+        $config['upload_path']          = $path_img;
+        $config['allowed_types']        = 'jpeg|jpg|png';
+        $config['max_size']             = 1024000;
+        $config['max_width']            = 1920;
+        $config['max_height']           = 1280;
+        $config['file_name']            = $slug;
+
+        $this->load->library('upload', $config);
   }
 
   public function update($slug_post){
     $new_slug = url_title($this->input->post('judul'), 'dash', true);
-    if($new_slug != $slug_post){
+    $path_year = date('Y');
+        $path_month = date('m');
+        $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
+        if (!is_dir($path_img))
+        {
+          mkdir($path_img, 0777, TRUE);
+        }
+
+        $config['upload_path']          = $path_img;
+        $config['allowed_types']        = 'jpeg|jpg|png';
+        $config['max_size']             = 1024000;
+        $config['max_width']            = 1920;
+        $config['max_height']           = 1280;
+        $config['file_name']            = $slug;
+
+        $this->load->library('upload', $config);
+        
+	if($new_slug != $slug_post){
       $data = array(
         'users' => $this->session->userdata('username'),
         'judul_post' => $this->input->post('judul'),
         'isi_post' => $this->input->post('isi'),
-        'image' => $this->input->post('image'),
+        'image' => $source,
         'tanggal_event' => $this->input->post('tanggal_event'),
         'tanggal_post' => $this->input->post('tanggal'),
         'slug_post' => $new_slug);

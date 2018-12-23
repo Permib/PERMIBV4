@@ -17,30 +17,27 @@
   <div class="row">
     <div class="col-md-8">
       <div class="form-group form-group-lg">
-        <label>Judul</label>
+        <label class="control-label font-weight-bold">JUDUL</label>	
         <input type="text" name="judul" placeholder="Nama berita" value="<?php if(isset($page->judul_post)){echo $page->judul_post;} ?>" required class="form-control">
       </div>
+		<input type="hidden" name="tanggal" class="form-control" value="<?= date('Y-m-d H-m-s');?>">
 
+		<div class="form-group">
+		  <label class="control-label font-weight-bold">GAMBAR THUMBNAIL</label><br>
+		  <input type="file" id="imgInp" name="image">
+		  <img id="blah" src="<?php if(isset($page->image)) echo base_url($page->image);?>" class="img-fluid"/>
+		</div>
 
-  <div class="col-md-12">
-    <input type="hidden" name="tanggal" class="form-control" value="<?= date('Y-m-d H-m-s');?>">
+		<div class="form-group">
+		  <label class="control-label font-weight-bold">ISI POST</label>
+		  <textarea rows="100" cols="50" name="isi" class="form-control" placeholder="Keterangan" id="keterangan"><?php  if(isset($page->judul_post)){echo $page->isi_post;}?></textarea>
+		</div>
 
-    <div class="form-group">
-      <label>Upload gambar</label>
-      <input type="file" name="image" class="form-control">
-    </div>
+		<div class="form-group">
+		  <input type="submit" name="submit" value="Simpan Data" class="btn btn-primary">
+		  <input type="reset" name="reset" value="Reset" class="btn btn-default">
+		</div>
 
-    <div class="form-group">
-      <label>Isi</label>
-      <textarea name="isi" class="form-control" placeholder="Keterangan" id="keterangan"><?php  if(isset($page->judul_post)){echo $page->isi_post;}?></textarea>
-    </div>
-
-    <div class="form-group">
-      <input type="submit" name="submit" value="Simpan Data" class="btn btn-primary">
-      <input type="reset" name="reset" value="Reset" class="btn btn-default">
-    </div>
-
-      </div>
     </div>
   </div>
 </div>

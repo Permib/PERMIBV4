@@ -30,7 +30,7 @@ class M_Page extends CI_Model {
 
   public function get_all_page(){
     $query = $this->db->select('slug_post, judul_post, image, tanggal_post, tanggal')
-                      ->order_by('slug_post','desc')
+                      ->order_by('tanggal_post','desc')
                       ->get('tbl_post');
 
     if($query->num_rows() > 0){
@@ -43,8 +43,8 @@ class M_Page extends CI_Model {
 
   public function get_event_by_total($total = '1'){
     $query = $this->db->limit($total)
-              ->order_by('slug_post', 'desc')
-              ->get('tbl_post');
+               ->order_by('tanggal_post','desc')
+			    ->get('tbl_post');
 
     if($query->num_rows() > 0){
         return $query->result();
