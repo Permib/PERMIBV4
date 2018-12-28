@@ -1,0 +1,45 @@
+.logo img {
+  width: 100px;
+  height: 85px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 2;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav ul.kiri {
+  margin: 0;
+  padding-left: 130px;
+}
+
+
+nav.blue ul {
+      background: #0064FF;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}

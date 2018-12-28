@@ -1,46 +1,30 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/*
-list font
-font-family: 'Roboto', sans-serif;
-font-family: 'Raleway', sans-serif;
-
-
-*/
-
 body {
-  font-family: "Raleway", sans-serif;
-  font-weight: lighter;
+	font-family: "Raleway", sans-serif;
+	font-weight: lighter;
 }
 
 header {
-      width: 100%;
-      height: 100vh;
-      background: url('../image/war-desert-guns-gunshow-163425.jpeg') no-repeat 50% 50%;
-      background-size: cover;
+	width: 100%;
+	background-size: cover;
 }
 
 .content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
+	width: 94px;
+	margin: 4em auto;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: justify;
 }
 
 .logo {
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px;
+	line-height: 80px;
+	position: fixed;
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-left: 20px;
 }
 
 .logo img {
@@ -49,45 +33,40 @@ header {
 }
 
 nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
-      z-index: 2;
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+	z-index: 2;
 }
 
 nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: 1s;
+	line-height: 60px;
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	padding-right: 40px;
+	transition: 1s;
 }
 
-nav ul.kiri {
-  margin: 0;
-  padding-left: 130px;
-}
-
-
-nav.blue ul {
-      background: #0064FF;
+nav ul {
+	background: #0064FF;
 }
 
 nav ul li {
-      display: inline-block;
-      padding: 16px 40px;
+	display: inline-block;
+	padding: 10px 40px;
 }
 
 nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
 }
+
 .menu-icon {
       line-height: 60px;
       width: 100%;
@@ -100,14 +79,12 @@ nav ul li a {
       display: none;
 }
 
-
-
 @media(max-width: 786px){
 
   .logo {
     position: fixed;
     top: 0;
-    margin-top: 16px;
+    margin-top: 6px;
   }
 
   nav ul {
@@ -133,12 +110,8 @@ nav ul li a {
   .menu-icon {
     display: block;
   }
-
-
+ /* Media Navbar*/
 }
-
-
-/*Foooter */
 
 .footer-distributed {
   background-color: #03a9f4;
@@ -195,7 +168,6 @@ nav ul li a {
   font-weight: normal;
   margin: 0;
 }
-
 
 /* footer di tengah/center */
 .footer-distributed .footer-center {
@@ -293,119 +265,90 @@ nav ul li a {
     }
 }
 
-.pengertian-permib {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+/*==============
+		EVENT
+================ */
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.p-logo-permib{
-  position: relative;
-  width: 30%;
-  height: 30%;
-  top: -35px;
-  left:   50px;
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-@media (max-width: 786px){
-  .p-logo-permib {
-    position: relative;
-    top: 20px;
-    left: 120px;
-  }
+section.body-klik-event {
+	font-size: 100%;
+	font-family: "Bitter", sans-serif;
 }
 
-.container-sejarah {
-  padding: 100px;
+.sekat-head {
+	padding: 50px;
+	background-color: #1a237e;
 }
 
-.foto-sejarah {
-  position: relative;
-  left: 50px;
-  float: left;
-  max-width: 100%;
-  height: auto;
+.back-event {
+	background-color: #8e99f3;
+	padding: 150px;
 }
 
-.kotak-sejarah{
-  .background-color: #1976d2
+.circle-judul {
+	position: relative;
+	bottom: 100px;
 }
 
-.sejarah h2 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
-  color: white;
+.circle-judul h1 {
+	font-size: 30px;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	text-align: center;
 }
 
-.sejarah p {
-  text-align: justify;
-  color: white;
-  margin-top: 30px;
-  font-size: 16px;
+.text-pict {
+	position: relative;
+	bottom: 50px;
 }
 
-
-.hade-pisan {
-  margin-top: 10px;
-  text-align: center;
-  color: #1565c0;
-  font-size: 60px;
+.text-pict p {
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+	line-height: 25px;
 }
 
 @media (max-width: 786px){
-  .foto-sejarah {
-    position: relative;
-    left: -10px;
-  }
+	.circle-judul {
+		position: relative;
+		top: 300px;
+	}
 
-  .kotak-sejarah {
-    position: relative;
-    left: -10px;
-    top: -10px;
-    width: 285px;
-    height: 360px;
-  }
+	.back-event {
+		padding: 100px
+	}
 
-  .hade-pisan {
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    top: 20px;
-    right: 10px;
-  }
+	.circle-judul h1 {
+		font-size: 25px;
+		text-align: center;
+	}
 
-}
+	.text-pict p {
+		font-size: 15px;
+		position: relative;
+		top: 280px;
+		text-align: justify;
+	}
 
-.secVisiMisi {
-  background-color:#80cbc4;
-}
+	.pict {
+		position: relative;
+		right: 50px;
+		width: 80px;
+		height: 100px;
+		bottom: 70px;
+	}	
 
-.visiPermib {
-  color: white;
-  font-size: 80px;
-  text-align: center;
-}
-
-
-
-.isiVisi {
-  font-size: 18px;
-  text-align: center;
-  margin-top: 50px;
-  color: #0288d1;
-}
-
-
-.misiPermib {
-  color: white;
-  font-size: 80px;
-  text-align: center;
-}
-
-.isiMisi {
-  font-size: 18px;
-  line-height: 30px;
-  color: #0288d1;
-  margin-bottom: 20px;
 }

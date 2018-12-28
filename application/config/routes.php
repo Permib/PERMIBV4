@@ -54,7 +54,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['dashboard'] = 'admin/admin';
+
 $route['about'] = 'home/about';
 $route['documentation'] = 'home/documentation';
+$route['event'] = 'home/event';
+
 $route['event/(:any)'] = 'page/detail_page';
 $route['logout'] = 'login/logout';

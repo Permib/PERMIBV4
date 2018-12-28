@@ -22,13 +22,13 @@ class Page extends CI_Controller {
   public function detail_page(){
     if($this->uri->segment(2)){
       $slug_post = $this->uri->segment(2);
-      $css = array();
+      $css = array('event_detail.css');
       $data = array('title' => 'Event - Perhimpunan Mahasiswa Bandung Telkom university',
                     'page' => $this->M_Page->get_page($slug_post),
                     'css' => $css);
-      $this->load->view('template/v_admin_header', $data);
+      $this->load->view('template/v_header', $data);
       $this->load->view('v_page_detail.php');
-      $this->load->view('template/v_admin_footer');
+      $this->load->view('template/v_footer');
     }
   }
 
@@ -123,7 +123,8 @@ class Page extends CI_Controller {
 
   public function update($slug_post){
     $new_slug = url_title($this->input->post('judul'), 'dash', true);
-    $path_year = date('Y');
+	if(!empty($this->input->post('image'))){				
+		$path_year = date('Y');
         $path_month = date('m');
         $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
         if (!is_dir($path_img))
@@ -139,6 +140,7 @@ class Page extends CI_Controller {
         $config['file_name']            = $slug;
 
         $this->load->library('upload', $config);
+	}	
         
 	if($new_slug != $slug_post){
       $data = array(

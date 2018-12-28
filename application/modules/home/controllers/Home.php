@@ -38,4 +38,17 @@ class Home extends CI_Controller {
 		$this->load->view('v_documentation');
 		$this->load->view('template/v_footer');
 	}
+	
+	public function event(){
+		$this->load->model('Page/M_Page');
+		$css = array('event.css');
+		$data = array('title' => 'Event - Perhimpunan Mahasiswa Bandung Telkom university',
+									'css' => $css,
+									'event' => $this->M_Page->get_event_by_total(3)
+					  );
+
+		$this->load->view('template/v_header', $data);
+		$this->load->view('v_event');
+		$this->load->view('template/v_footer');
+	}
 }

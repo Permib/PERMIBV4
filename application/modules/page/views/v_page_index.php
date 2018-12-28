@@ -2,9 +2,9 @@
 <div class="container" style="margin-top: 20px">
 	<div class="row">
 		<div class="col-md-12 py-2 ">
-			<a href="<?=base_url('page/create')?>" class="btn btn-success"><i class="fas fa-plus"></i> Create Post<a>
+			<a href="<?=base_url('page/create	')?>" class="btn btn-success"><i class="fas fa-plus"></i> Create Post<a>
 		</div>
-		<div class="col-md-12">
+		<div class="col-md-12">	
 			<table id="table_id" class="table table-striped table-bordered" cellspacing="0" width="100%">
 				<thead>
 			<tr>
