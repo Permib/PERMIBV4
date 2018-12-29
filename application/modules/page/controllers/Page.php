@@ -7,8 +7,7 @@ class Page extends CI_Controller {
       $this->load->model('M_Page');
   }
 
-	public function index()
-	{
+	public function index(){
     $css = []; // Cssnya gak ada berarti kalo kosong
     $data = ['title' => 'Kelola Posting',
                   'css' => $css,
@@ -123,7 +122,8 @@ class Page extends CI_Controller {
 
   public function update($slug_post){
     $new_slug = url_title($this->input->post('judul'), 'dash', true);
-	if(!empty($this->input->post('image'))){				
+	$data = [];
+	if(!empty($_FILES['image'])){				
 		$path_year = date('Y');
         $path_month = date('m');
         $path_img = './assets/image/post/'.$path_year.'/'.$path_month;
@@ -140,24 +140,27 @@ class Page extends CI_Controller {
         $config['file_name']            = $slug;
 
         $this->load->library('upload', $config);
-	}	
-        
-	if($new_slug != $slug_post){
-      $data = array(
-        'users' => $this->session->userdata('username'),
-        'judul_post' => $this->input->post('judul'),
-        'isi_post' => $this->input->post('isi'),
-        'image' => $source,
-        'tanggal_event' => $this->input->post('tanggal_event'),
-        'tanggal_post' => $this->input->post('tanggal'),
-        'slug_post' => $new_slug);
-
-        $this->M_Page->update($slug_post, $data);
-        redirect('page');
-    }else{
-      redirect('page');
-
-    }
+		if(!$this->upload->do_upload('image')){
+			redirect('page');
+		}else{
+			$this->session->set_flashdata('upload_status', 'sukses');
+			$gambar = $this->upload->data();
+			$source = './assets/image/post/'.$path_year.'/'.$path_month.'/'.$gambar['file_name'];	
+			$data['image'] = $source;
+		}
+		echo '<script>alert("ada")</script>';
+	}
+   $data = [
+	  'users' => $this->session->userdata('username'),
+	  'judul_post' => $this->input->post('judul'),
+	  'isi_post' => $this->input->post('isi'),
+	  'tanggal_event' => $this->input->post('tanggal_event'),
+	  'tanggal_post' => $this->input->post('tanggal'),
+   ];  
+	$this->M_Page->update($slug_post, $data);
+	$this->session->set_flashdata('insert_page','success');
+	redirect('page');
+       
   }
 
   public function delete($id){

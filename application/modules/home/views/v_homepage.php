@@ -18,7 +18,7 @@
 			  <img class="card-img-top" src="<?=base_url('assets/image/logo-permib.png')?>" alt="Card image cap">
 				<div class="card-body">
 					<h5 class="card-title">PERMIB</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<p class="card-text">Perhimpunan Mahasiswa Bandung merupakan </p>
 					<a href="#" class="btn btn-primary">Go somewhere</a>
 				</div>
 			</div>
@@ -150,7 +150,7 @@
 <h1> -----  UPCOMING EVENT  ----- </h1>
 
 <!-- <ul class="container-event"> -->
-<ul class="container">
+<ul class="container-event">
 	<?php foreach ($event as $row) { ?>
 	  <li class="list-card">
 		<a href="<?=base_url('event/').$row->slug_post?>">
