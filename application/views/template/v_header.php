@@ -54,19 +54,13 @@
           </div>
 
           <div class="logo">
-            <img src="<?=base_url('assets/image/PermibTU.png')?>">
+            <a href="<?=base_url('')?>"> <img src="<?=base_url('assets/image/PermibTU.png')?>">  </a>
           </div>
 
           <div class="menu">
 
-            <ul class="kiri" style="float: left;"> 
-               <li> <a href="#" style="margin-left: -5px;"> AKADEMIK </a></li>
-                <li> <a href="#" style="margin-left: 3px;"> STORE </a></li>
-            </ul>
-
              <ul>
                 <!-- Home with dropdown -->
-                <li> <a href="<?=base_url('')?>"> HOME  </a> </li>
                 <li><a href="<?=base_url('event')?>"> EVENT </a></li>
                 <li><a href="<?=base_url('documentation')?>"> DOCUMENTATION </a></li>
                 <li><a href="<?=base_url('about')?>"> ABOUT </a></li>
