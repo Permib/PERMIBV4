@@ -18,13 +18,13 @@
 			  <img class="card-img-top" src="<?=base_url('assets/image/logo-permib.png')?>" alt="Card image cap">
 				<div class="card-body">
 					<h5 class="card-title">PERMIB</h5>
-<<<<<<< HEAD
+
 					<p class="card-text">Perhimpunan Mahasiswa Bandung merupakan </p>
 					<a href="#" class="btn btn-primary">Go somewhere</a>
-=======
+
 					<p class="card-text">Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung.</p>
 					<a href="#" class="butn butn-primary">Go somewhere</a>
->>>>>>> f47590565dd612b7383551b12f4e326bf41e14e7
+
 				</div>
 			</div>
 		</div>
