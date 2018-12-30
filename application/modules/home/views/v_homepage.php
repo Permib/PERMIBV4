@@ -5,9 +5,9 @@
          	<div class="card card-proker" style="width: 18rem;">
 			  <img class="card-img-top" src="<?=base_url('assets/image/logo-pmb.png')?>" alt="Card image cap">
 			  <div class="card-body">
-			    <h5 class="card-title">PERMIBTIVITY</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
+			    <h5 class="card-title">PMB</h5>
+				<p class="card-text">Permibtivity&PMB (PERMIB Action in Charity & Penerimaan Mahasiswa Baru) merupakan kegiatan tahunan yang dikelola oleh ...</p>
+				<a href="#" class="butn butn-primary">Go somewhere</a>
 			  </div>
 			</div>
 		</div>
@@ -18,8 +18,13 @@
 			  <img class="card-img-top" src="<?=base_url('assets/image/logo-permib.png')?>" alt="Card image cap">
 				<div class="card-body">
 					<h5 class="card-title">PERMIB</h5>
+<<<<<<< HEAD
 					<p class="card-text">Perhimpunan Mahasiswa Bandung merupakan </p>
 					<a href="#" class="btn btn-primary">Go somewhere</a>
+=======
+					<p class="card-text">Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung.</p>
+					<a href="#" class="butn butn-primary">Go somewhere</a>
+>>>>>>> f47590565dd612b7383551b12f4e326bf41e14e7
 				</div>
 			</div>
 		</div>
@@ -30,8 +35,8 @@
 				<img class="card-img-top" src="<?=base_url('assets/image/logo-perfect.png')?>" alt="Card image cap">
 				  <div class="card-body">
 					<h5 class="card-title">PERFECT</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<p class="card-text">PERFECT terdiri dari 3 rangkaian, yaitu Try Out SMB Telkom, Wondercup, dan Bandoengsche.</p>
+					<a href="#" class="butn butn-primary">Go somewhere</a>
 				  </div>
 			</div>
 		</div>
@@ -147,7 +152,7 @@
 <!-- UPCOMING EVENT CARD -->
 <section class="upcoming-event">
 
-<h1> -----  UPCOMING EVENT  ----- </h1>
+<h1> EVENT </h1>
 
 <!-- <ul class="container-event"> -->
 <ul class="container-event">

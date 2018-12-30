@@ -1,6 +1,6 @@
 
     <!-- Content Goes Here  -->
-    <section class="bg-info" style="margin-top: -25px;">
+    <section style="margin-top: -25px; background: #0A56B2;">
         <div class="container" >
           <div class="pengertian-permib">
             <h1 style="padding-top: 20px;"> Apa itu PERMIB?</h1>
@@ -8,44 +8,18 @@
 
           <div class="row">
             <div class="col-md-8">
-              <p style="text-align: justify;"> Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung. Terbentuk pada 5 Mei 2005, Permib ada karena kampus tersebut memiliki mahasiswa yang berasal dari berbagai daerah di nusantara. Dengan adanya Permib, diharapkan para mahasiswa asli Bandung muncul untuk menjadi unit kegiatan mahasiswa yang tetap konsisten di kampus, walaupun banyak unit kegiatan mahasiswa dari berbagai daerah lainnya. </p>
+              <p style="text-align: justify; color: white;"> Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung. Terbentuk pada 5 Mei 2005, Permib ada karena kampus tersebut memiliki mahasiswa yang berasal dari berbagai daerah di nusantara. Dengan adanya Permib, diharapkan para mahasiswa asli Bandung muncul untuk menjadi unit kegiatan mahasiswa yang tetap konsisten di kampus, walaupun banyak unit kegiatan mahasiswa dari berbagai daerah lainnya.. </p>
             </div>
 
             <div class="col-md-4 p-logo-permib">
               <!-- buat logo permib -->
-              <img src="D:/Proyek/Permib/WebPermibV3/image/PermibTU.png" style="height: 200px; width: 200px; margin">
+              <img src="<?=base_url('assets/image/permibTU.png')?>" style="height: 200px; width: 200px; margin">
             </div>
           </div>
         </div>
     </section>
 
     <div style="margin-top: 10px;"></div>
-
-    <section class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <!-- foto sejarah -->
-            <img src="D:/Proyek/Permib/WebPermibV3/image/pexels-photo-674577.jpeg">
-          </div>
-
-          <div class="col-sm-6 bg-primary" >
-            <!-- text Sejarah -->
-            <div class="sejarah">
-              <h2> Sejarah </h2>
-
-              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <div class="hade-pisan">
-         <h2> " Bandung? <br> HADE PISAN EUY " </h2> 
-        </div>
-
-            
-    </section>
 
     <!-- Section Visi dan Misi -->
     <section class="secVisiMisi" style="margin-top: 20px;">
@@ -82,7 +56,7 @@
     <!-- Organigram -->
 
     <section>
-      <img src="D:/Proyek/Permib/WebPermibV3/image/organigram.jpg" class="img-fluid">
+      <img src="<?=base_url('assets/image/Struktur.jpg')?>" class="img-fluid">
     </section>
 
 

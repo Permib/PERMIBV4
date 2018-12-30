@@ -27,7 +27,6 @@
 		<!-- AJAX -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js" crossorigin="anonymous"></script>
 
-
 		<!-- font -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 
