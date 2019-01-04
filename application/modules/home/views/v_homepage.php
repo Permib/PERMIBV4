@@ -50,9 +50,9 @@
 		<div class="slide is-active ">
 		  <div class="slide-content">
 			<div class="caption">
-			  <div class="title">Slide title 1</div>
+			  <div class="title"> Sahur On The Road</div>
 			  <div class="text">
-				<p>Slide description 1</p>
+				<p> By PERMIBTIVITY</p>
 			  </div>
 			  <a href="#" class="btn">
 				<span class="btn-inner">Learn More</span>
@@ -60,15 +60,15 @@
 			</div>
 		  </div>
 		  <div class="image-container">
-			<img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
+			<img src="<?=base_url('assets/image/slider_sotr.png')?>" alt="slider_SOTR" class="image" />
 		  </div>
 		</div>
 		<div class="slide">
 		  <div class="slide-content">
 			<div class="caption">
-			  <div class="title">Slide title 2</div>
+			  <div class="title"> Arak-Arakan Wisuda</div>
 			  <div class="text">
-				<p>Slide description 2</p>
+				<p> By PERMIB </p>
 			  </div>
 			  <a href="#" class="btn">
 				<span class="btn-inner">Learn More</span>
@@ -76,15 +76,15 @@
 			</div>
 		  </div>
 		  <div class="image-container">
-			<img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
+			<img src="<?=base_url('assets/image/slider_arak.png')?>" alt="slider_permib" class="image" />
 		  </div>
 		</div>
 		<div class="slide">
 		  <div class="slide-content">
 			<div class="caption">
-			  <div class="title">Slide title 3</div>
+			  <div class="title"> SMB Telkom University </div>
 			  <div class="text">
-				<p>Slide description 3</p>
+				<p> By PERFECT </p>
 			  </div>
 			  <a href="#" class="btn">
 				<span class="btn-inner">Learn More</span>
@@ -92,26 +92,10 @@
 			</div>
 		  </div>
 		  <div class="image-container">
-			<img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
+			<img src="<?=base_url('assets/image/slider_TO.png')?>" alt="slider_TO" class="image" />
 		  </div>
 		</div>
-		<div class="slide">
-		  <div class="slide-content">
-			<div class="caption">
-			  <div class="title">Slide title 4</div>
-			  <div class="text">
-				<p>Slide description 4</p>
-			  </div>
-			  <a href="#" class="btn">
-				<span class="btn-inner">Learn More</span>
-			  </a>
-			</div>
-		  </div>
-		  <div class="image-container">
-			<img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/20mars17-sans-typo.jpg" alt="" class="image" />
-		  </div>
-		</div>
-	  </div>
+		
 	  <div class="pagination">
 		<div class="item is-active">
 		  <span class="icon">1</span>
@@ -122,9 +106,7 @@
 		<div class="item">
 		  <span class="icon">3</span>
 		</div>
-		<div class="item">
-		  <span class="icon">4</span>
-		</div>
+		
 	  </div>
 	  <div class="arrows">
 		<div class="arrow prev">
