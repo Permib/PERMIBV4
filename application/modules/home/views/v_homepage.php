@@ -18,8 +18,13 @@
 			  <img class="card-img-top" src="<?=base_url('assets/image/logo-permib.png')?>" alt="Card image cap">
 				<div class="card-body">
 					<h5 class="card-title">PERMIB</h5>
+
+					<p class="card-text">Perhimpunan Mahasiswa Bandung merupakan </p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+
 					<p class="card-text">Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung.</p>
 					<a href="#" class="butn butn-primary">Go somewhere</a>
+
 				</div>
 			</div>
 		</div>
@@ -132,7 +137,7 @@
 <h1> EVENT </h1>
 
 <!-- <ul class="container-event"> -->
-<ul class="container">
+<ul class="container-event">
 	<?php foreach ($event as $row) { ?>
 	  <li class="list-card">
 		<a href="<?=base_url('event/').$row->slug_post?>">
