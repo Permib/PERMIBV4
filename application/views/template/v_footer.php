@@ -5,11 +5,11 @@
 	          <h3> Permib Bandung </h3>
 
 	          <p class="footer-links"> 		
-	            <a href="#"> HOME </a>
+	            <a href="<?=base_url('')?>"> HOME </a>
 	            -
 	            <a href="#"> BLOG </a>
 	            -
-	            <a href="#"> ABOUT </a>
+	            <a href="<?=base_url('about')?>"> ABOUT </a>
 	            -
 	            <a href="#"> CONTACT </a>
 	          </p>
@@ -48,9 +48,9 @@
 	              </p>
 
 	              <div class="footer-icons">
-	                  <a href="#"><i class="fa fa-twitter"></i></a>
-	                  <a href="#"><i class="fa fa-instagram"></i></a>
-	                  <a href="#"><i class="fa fa-youtube"></i></a>
+	                  <a href="#"><i class="fab fa-twitter"></i></a>
+	                  <a href="#"><i class="fab fa-instagram"></i></a>
+	                  <a href="#"><i class="fab fa-youtube"></i></a>
 	              </div>
 	          
 	        </div>

@@ -19,7 +19,9 @@
 						<div class="container">
 							<div class="row">
 								<!-- pict -->
-							  <div class="col-sm-5 pict"> <img class="img-fluid" src="<?=base_url($page->image)?>"> </div>
+							  <?php if(isset($page->image) && $page->image != NULL){ ?>
+								  <div class="col-sm-5 pict"> <img class="img-fluid" src="<?=base_url($page->image)?>"> </div>
+							  <?php }?>
 
 							  <!-- text -->
 							  

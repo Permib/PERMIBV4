@@ -27,6 +27,12 @@
 		  <input type="file" id="imgInp" name="image">
 		  <img id="blah" src="<?php if(isset($page->image)) echo base_url($page->image);?>" class="img-fluid"/>
 		</div>
+		
+		
+		<div class="form-group">
+		  <label class="control-label font-weight-bold">TANGGAL ACARA</label>
+		  <input type="date" name="tanggal_event" value="" class="form-control">
+		 </div>
 
 		<div class="form-group">
 		  <label class="control-label font-weight-bold">ISI POST</label>
