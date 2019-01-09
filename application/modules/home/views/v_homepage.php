@@ -146,17 +146,17 @@
 		  </div>
 		  <div class="text-card">
 			<div class="text-contain">
-			  <div class="text-judul">
-				<h2 class="text--title"><?=$row->judul_post?></h2>
-				<!-- <p class="tgl-acara"> 8 Agustus, 2018 </p> -->
-				<p class="tgl-acara"> <?=$row->tanggal_event?> </p>
-			  </div>
-			  <div class="text--details">
-				<div class="deskripsi-event"> <?= cut_text($row->isi_post);?> </diiv>
-				  <!-- tag a href ada di helper -->
-			  </div>
-			</div>
-			<span class="text-muted posted-time">Posted in <?php echo selisih_waktu($row->tanggal_post)?> ago</span>
+				<div class="text-judul">
+					<h2 class="text--title"><?=$row->judul_post?></h2>
+					<!-- <p class="tgl-acara"> 8 Agustus, 2018 </p> -->
+					<p class="tgl-acara"> <?=date("j F, Y",strtotime($row->tanggal_event))?> </p>
+				</div>
+				<div class="text--details pb-5 pt-3">
+					<div class="deskripsi-event"> <?= cut_text(htmlspecialchars_decode($row->isi_post));?> </diiv>
+					  <!-- tag a href ada di helper -->
+					</div>
+				</div>
+				<span class="text-muted posted-time">Posted in <?php echo selisih_waktu($row->tanggal_post)?> ago</span>
 		  </div>
 		</div>
 	  </a>
