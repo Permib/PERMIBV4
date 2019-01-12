@@ -19,19 +19,16 @@
 						<div class="container">
 							<div class="row">
 								<!-- pict -->
-							  <div class="col-sm-5 pict"> <img class="img-fluid" src="<?=base_url($page->image)?>"> </div>
+							  <?php if(isset($page->image) && $page->image != NULL){ ?>
+								  <div class="col-sm-5 pict"> <img class="img-fluid" src="<?=base_url($page->image)?>"> </div>
+							  <?php }?>
 
 							  <!-- text -->
-							  
 							  <div class="col-sm-7"> 
-							  <p><?=$page->isi_post?>
-							  		<br>
-
-
-									
-									</p>
+								<?=htmlspecialchars_decode($page->isi_post)?>
+							  	<br>
 								<h5 class="card-title"><?=$page->tanggal_event?></h5>
-								<p class="card-text"><small class="text-muted">diposting pada <?=$page->tanggal_post?></small></p>							  
+								<p class="card-text"><small class="text-muted">diposting pada <?=date("j F, Y",strtotime($page->tanggal_post))?></small></p>							  
 							  </div>
 							</div>
 						</div>
