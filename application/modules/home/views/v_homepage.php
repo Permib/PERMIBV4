@@ -19,9 +19,6 @@
 				<div class="card-body">
 					<h5 class="card-title">PERMIB</h5>
 
-					<p class="card-text">Perhimpunan Mahasiswa Bandung merupakan </p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-
 					<p class="card-text">Permib adalah kumpulan mahasiswa asli Bandung yang menempuh pendidikan di Universitas Telkom, Bandung.</p>
 					<a href="#" class="butn butn-primary">Go somewhere</a>
 
