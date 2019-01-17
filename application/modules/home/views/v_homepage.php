@@ -56,7 +56,7 @@
 			  <div class="text">
 				<p> By PERMIBTIVITY</p>
 			  </div>
-			  <a href="#" class="btn">
+			  <a href="<?=base_url('sotr')?>" class="btn">
 				<span class="btn-inner">Learn More</span>
 			  </a>
 			</div>
@@ -72,7 +72,7 @@
 			  <div class="text">
 				<p> By PERMIB </p>
 			  </div>
-			  <a href="#" class="btn">
+			  <a href="<?=base_url('wisuda')?>" class="btn">
 				<span class="btn-inner">Learn More</span>
 			  </a>
 			</div>
@@ -88,7 +88,7 @@
 			  <div class="text">
 				<p> By PERFECT </p>
 			  </div>
-			  <a href="#" class="btn">
+			  <a href="<?=base_url('smb')?>" class="btn">
 				<span class="btn-inner">Learn More</span>
 			  </a>
 			</div>

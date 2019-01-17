@@ -7,11 +7,11 @@
 	          <p class="footer-links"> 		
 	            <a href="<?=base_url('')?>"> HOME </a>
 	            -
-	            <a href="#"> BLOG </a>
+	            <a href="<?=base_url('')?>"> BLOG </a>
 	            -
 	            <a href="<?=base_url('about')?>"> ABOUT </a>
 	            -
-	            <a href="#"> CONTACT </a>
+	            <a href="<?=base_url('')?>"> CONTACT </a>
 	          </p>
 
 	          <p class="footer-tim-web"> Tim Website Permib &copy; 2018</p>

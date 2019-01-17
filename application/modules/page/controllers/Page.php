@@ -217,7 +217,7 @@ class Page extends CI_Controller {
   private function delete_image($filename){
 		$filename = './'.$filename;
 	   if (file_exists($filename)){
-            unlink($filename);
+            unlink($filename);	
         }
   } 
 }

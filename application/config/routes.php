@@ -58,6 +58,9 @@ $route['dashboard'] = 'admin/admin';
 $route['about'] = 'home/about';
 $route['documentation'] = 'home/documentation';
 $route['event'] = 'home/event';
+$route['smb'] = 'home/smb';
+$route['sotr'] = 'home/sotr';
+$route['wisuda'] = 'home/wisuda';
 
 $route['event/(:any)'] = 'page/detail_page';
 $route['logout'] = 'login/logout';
