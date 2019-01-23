@@ -292,7 +292,7 @@ section.body-klik-event {
 
 .back-event {
 	background-color: #8e99f3;
-	padding: 150px;
+	padding: 250px;
 }
 
 .circle-judul {
@@ -306,6 +306,11 @@ section.body-klik-event {
 	font-family: "Roboto", sans-serif;
 	font-weight: bold;
 	text-align: center;
+}
+
+.pict img {
+  height: 300px;
+  width: 400px;
 }
 
 .text-pict {
@@ -328,7 +333,7 @@ section.body-klik-event {
 	}
 
 	.back-event {
-		padding: 100px
+		padding: 300px;
 	}
 
 	.circle-judul h1 {
